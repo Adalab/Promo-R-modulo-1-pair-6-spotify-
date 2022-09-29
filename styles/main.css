@@ -5,9 +5,11 @@
     font-family: var(--font);
     line-height: 40px;
 }
+.body{
+    height: 100vh;
+}
 
 .header {
-    /* max-width: 480px; */
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -17,8 +19,11 @@
     width: 80px;
     padding: 15px;   
 }
+.nav{
+    display: none;
+}
 
-.menu{
+.item{
     display: inline-block;
     padding: 10px;
     margin: 10px;
@@ -26,11 +31,11 @@
 
 .link {
     text-decoration: none;
+    color: white;
 }
 
 .section-one {
     background-color: rgb(21, 160, 225);
-    width: 480px;
     color: white;
     display: flex; 
     flex-direction: column;
@@ -46,8 +51,8 @@
 }
 
 .article-img {
-    width: 100px;
-    height: 100px;
+    width: 6.25em;
+    height: 6.25em;
     margin-bottom: 40px;
     margin-right: 15px;
 }
@@ -56,7 +61,6 @@
     margin-top: 100px;
     font-size: 45px;
     font-weight: 800;
-    
 }
 .h2 {
     font-size: 25px;
@@ -112,4 +116,49 @@
     margin-top: 10px;
     font-size: 12px;
     line-height: 20px;
+}
+.aside {
+    display: none;
+}
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.item3{
+    display:block;
+    width: 100%;
+}
+.left{
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    line-height: 30px;
+    
+}
+.right{
+    margin-top: 50px;
+}
+.esp {
+    color: white;
+}
+@media all and (min-width:480px){
+    .nav {
+        display: flex;
+    }
+    .section-one{
+        background-image: url(https://github.com/Adalab/ejercicios-de-los-materiales/blob/main/html-spotify/images/premium_dancer.png?raw=true);
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .h1{
+        margin-top: 400px;
+        font-size: 70px;
+    }
+    .section-two {
+        display: flex;
+    }
 }
