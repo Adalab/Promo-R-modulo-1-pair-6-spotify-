@@ -7,7 +7,6 @@
 }
 
 .header {
-    /* max-width: 480px; */
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -30,7 +29,6 @@
 
 .section-one {
     background-color: rgb(21, 160, 225);
-    width: 480px;
     color: white;
     display: flex; 
     flex-direction: column;
